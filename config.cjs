@@ -2,7 +2,7 @@ const fs = require('fs');
 if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
 
 module.exports = {
-  "SESSION_ID": process.env.SESSION_ID || "",
+  "": process.env.SESSION_ID || "",
   "ALIVE_IMG": process.env.ALIVE_IMG || "https://raw.githubusercontent.com/HyHamza/HyHamza/refs/heads/main/Images/logo.jpg",
   "PREFIX": process.env.PREFIX || ".",
   "AUTO_READ_STATUS": process.env.AUTO_READ_STATUS === 'true',
@@ -27,6 +27,6 @@ module.exports = {
   "PREMIUM_USERS": process.env.PREMIUM_USERS || "",
   "COUNTRY_BLOCK": process.env.COUNTRY_BLOCK === 'true',
   "COUNTRY_BLOCK_CODE": process.env.COUNTRY_BLOCK_CODE || "972",
-  "EMOJI": process.env.EMOJI || "🙄",
+  "EMOJI": process.env.EMOJI || "🖤",
   "AUTO_TYPING": process.env.AUTO_TYPING === 'true'
 };
